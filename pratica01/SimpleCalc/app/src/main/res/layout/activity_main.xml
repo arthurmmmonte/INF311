@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Value1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value1"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Value1"
+        android:layout_marginStart="50dp"
+        android:autofillHints="Valor 1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/Value2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value2"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/EditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Value2"
+        android:layout_marginStart="50dp"
+        android:autofillHints="Valor 2"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:text="@string/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/EditText2"
+        android:padding="10dp"
+        android:onClick="onClickPlus" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:text="@string/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/Button1"
+        android:layout_below="@id/EditText2"
+        android:padding="10dp"
+        android:onClick="onClickMinus" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:text="@string/mult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/Button2"
+        android:layout_below="@id/EditText2"
+        android:padding="10dp"
+        android:onClick="onClickMult"/>
+
+    <Button
+        android:id="@+id/Button4"
+        android:text="@string/div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/Button3"
+        android:layout_below="@id/EditText2"
+        android:padding="10dp"
+        android:onClick="onClickDiv" />
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/Button1"
+        android:text="@string/result"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/Text1"
+        android:text=""
+        android:textSize="15sp" />
+
+</RelativeLayout>

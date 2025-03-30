@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="@string/app_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Box"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:editable="false"
+        android:inputType="none"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="75dp" />
+
+    <Button
+        android:id="@+id/seven"
+        android:text="@string/seven"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/Box"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/eight"
+        android:text="@string/eight"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/Box"
+        android:layout_toEndOf="@+id/seven"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/nine"
+        android:text="@string/nine"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/Box"
+        android:layout_toEndOf="@+id/eight"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/four"
+        android:text="@string/four"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/seven"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/five"
+        android:text="@string/five"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/eight"
+        android:layout_toEndOf="@+id/four"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/six"
+        android:text="@string/six"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/nine"
+        android:layout_toEndOf="@+id/five"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/one"
+        android:text="@string/one"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/four"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/two"
+        android:text="@string/two"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/five"
+        android:layout_toEndOf="@+id/one"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/three"
+        android:text="@string/three"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/six"
+        android:layout_toEndOf="@+id/two"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/zero"
+        android:text="@string/zero"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="105dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/one"
+        android:onClick="onClickNumber" />
+
+    <Button
+        android:id="@+id/dot"
+        android:text="@string/dot"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/three"
+        android:layout_toEndOf="@id/zero"
+        android:onClick="onClickDot" />
+
+    <Button
+        android:id="@+id/div"
+        android:text="@string/div"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/Box"
+        android:layout_toEndOf="@id/nine"
+        android:onClick="onClickSign" />
+
+    <Button
+        android:id="@+id/mult"
+        android:text="@string/mult"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/div"
+        android:layout_toEndOf="@id/six"
+        android:onClick="onClickSign" />
+
+    <Button
+        android:id="@+id/minus"
+        android:text="@string/minus"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/mult"
+        android:layout_toEndOf="@id/three"
+        android:onClick="onClickSign" />
+
+    <Button
+        android:id="@+id/plus"
+        android:text="@string/plus"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/minus"
+        android:layout_toEndOf="@id/dot"
+        android:onClick="onClickSign" />
+
+    <Button
+        android:id="@+id/backspace"
+        android:text="@string/backspace"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/Box"
+        android:layout_toEndOf="@id/div"
+        android:onClick="onClickBackspace" />
+
+    <Button
+        android:id="@+id/clear"
+        android:text="@string/clear"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:layout_below="@+id/backspace"
+        android:layout_toEndOf="@id/mult"
+        android:onClick="onClickClear" />
+
+    <Button
+        android:id="@+id/equals"
+        android:text="@string/equals"
+        android:layout_width="65dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:minWidth="50dp"
+        android:minHeight="100dp"
+        android:layout_below="@+id/clear"
+        android:layout_toEndOf="@id/minus"
+        android:onClick="onClickEquals" />
+
+</RelativeLayout>
