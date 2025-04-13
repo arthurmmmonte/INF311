@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pratica02.1</string>
+    <string name="name">Nome:</string>
+    <string name="age">Idade:</string>
+    <string name="weight">Peso (kg):</string>
+    <string name="height">Altura (m):</string>
+    <string name="relatorio">Relatório Nutricional</string>
+    <string name="imc">IMC:</string>
+    <string name="classification">Classificação:</string>
+</resources>
